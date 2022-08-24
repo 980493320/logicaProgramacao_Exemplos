@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        let user = {
+            name: 'Cesar'
+        };
+
+        //Alterando a propriedade de um objeto
+        // console.log(user);
+
+
+        user.name = 'Outro nome 1';
+        // console.log(user);
+        user['name'] = 'Outro nome 2';
+        // console.log(user);
+
+        const prop = 'name';
+        user[prop] = 'Outro nome 3';
+
+        //console.log(user);
+
+        // Criando uma propriedade
+        user.lastName = 'Amador Santos';
+
+
+
+        // Deletando uma propriedade
+        delete user.name;
+
+        console.log(user);
+    </script>
+
+
+</body>
+
+</html>

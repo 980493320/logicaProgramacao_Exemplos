@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos 2</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        let user = {
+            name: 'Cesar Augusto',
+            lastName: 'Amador Santos'
+        };
+
+        // recupera as chaves do objeto
+        //console.log('Propriedades do objeto user:', Object.keys(user));
+
+        // recupera os valores das chaves do objeto
+        // console.log('\nValores das propriedades do objeto user:', Object.values(user));
+
+
+        // Retorna um array de arrays contendo [ nome_prop, valor_prop]
+        // console.log('\nLista de propriedades  e valores:', Object.entries(user));
+
+        // Mergear propriedades de objetos
+        // Object.assing(user, {
+        //   fullName: 'Cesar Augusto Amador Santos'
+        // });
+
+        // console.log('\nAdiciona a propriedade fullName no objeto user', user);
+        //console.log('\nRetorna um objeto mergeado dois ou mais objetos', Object.assing({}, user, {
+        // age: 27
+        // }));
+
+        // Previne todas as alterações em um objeto
+        const newobj = {
+            foo: 'bar'
+        };
+        //Object.freeze(newobj);
+
+        newobj.foo = 'changes';
+        delete newobj.foo;
+        newobj.bar = 'foo';
+
+
+        console.log('\nVariavel newobj após as alterações:', newobj);
+    </script>
+
+
+</body>
+
+</html>

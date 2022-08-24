@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOR</title>
+</head>
+
+<body>
+
+    <form name="selectForm">
+        <p>
+            <label for="tipoMusica">Escolha alguns tipos de música, em seguida, clique no botão abaixo:</label>
+            <select id="tipoMusica" name="tipoMusica" multiple="multiple">
+            <option selected="selected">R&B</option>
+            <option>Jazz</option>
+            <option>Blues</option>
+            <option>Pagode</option>
+            <option>Classico</option>
+            <option>Ópera</option>
+            <option>Samba</option>
+          </select>
+        </p>
+        <p><input id="btn" type="button" value="Quantos foram selecionados?" /></p>
+    </form>
+
+    <script type="text/javascript">
+        function musica(selectObject) {
+            var numeroSelecionadas = 0;
+            for (var i = 0; i < selectObject.options.length; i++) {
+                if (selectObject.options[i].selected) {
+                    numeroSelecionadas++;
+                }
+            }
+            return numeroSelecionadas;
+        }
+
+        var btn = document.getElementById("btn");
+        btn.style.background = 'green'
+        btn.addEventListener("click", function() {
+            alert('Total de opções selecionadas: ' + musica(document.selectForm.tipoMusica))
+        });
+
+
+        //A função a seguir contém uma declaração for que contará o número de opções selecionadas 
+        //em uma lista (um elemento <select> permite várias seleções). Dentro do for é declarado uma váriavel 
+        // i inicializada com zero. A declaração for verifica se i é menor que o número de opções no elemento <select>, 
+        //executa sucessivas declaração  if, e incrementa i de um em um a cada passagem pelo laço.
+    </script>
+
+
+</body>
+
+</html>

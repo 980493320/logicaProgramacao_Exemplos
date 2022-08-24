@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        const users = ['Cesar', 'Renato', 'Talita'];
+
+        // const genero = {
+        //     Masculino: Symbol('M'),
+        //     Feminino: Symbol('F')
+        // }
+
+        const pessoas = [{
+                name: 'Cesar',
+                idade: '27',
+                genero: 'M'
+
+            }, {
+                name: 'Renato',
+                idade: '34',
+                genero: 'M'
+
+            }, {
+                name: 'Talita',
+                idade: '26',
+                genero: 'F'
+
+            }
+
+        ];
+
+        // Retornar a quantidade de itens de um array
+        console.log('Itens:', pessoas.length);
+
+        // Verificar se é um array
+        console.log('A variável pessoas é um array', Array.isArray(pessoas));
+
+        // Iterar os intens do array
+        pessoas.forEach(pessoas => {
+            console.log(`Nome: ${pessoas.name}`);
+        });
+
+
+        // Filtrar array
+        //const mens = pessoas.filter(pessoas => pessoas.genero === 'M');
+        // console.log('\nNova lista apenas com homens:', mens);
+    </script>
+
+
+</body>
+
+</html>
